@@ -1,21 +1,21 @@
-# Zara Prime Realty
+ Zara Prime Realty
 
 A modern and responsive real estate website built with HTML and CSS.
 
-## Live Demo
+ Live Demo
 https://zara-prime-realty.netlify.app
 
-## Features
+ Features:
 - Responsive Design
 - Modern User Interface
 - Property Listings
 - Login & Registration Pages
 - Mobile-Friendly Layout
 
-## Technologies Used
+ Technologies Used
 - HTML5
 - CSS3
 
 
-## Author
+ Author
 Samuel Prosper (Nevo)
