@@ -1,0 +1,468 @@
+
+
+   /* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+  
+/* ROOT VARIABLES */
+:root{
+    --primary:#0F172A;
+    --secondary:#D4AF37;
+    --white:#FFFFFF;
+    --light:#F8FAFC;
+    --gray:#64748B;
+    --dark:#020617;
+
+    --shadow:0 10px 30px rgba(0,0,0,.1);
+    --radius:12px;
+    --transition:.3s ease;
+}
+
+   /* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--white);
+    color:var(--dark);
+    line-height:1.7;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+   /* PAGE HEADER */
+
+.page-header{
+    background:linear-gradient(
+        rgba(15,23,42,.85),
+        rgba(15,23,42,.85)
+    ),
+    url("../images/about.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:120px 20px;
+}
+
+.page-header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.page-header p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+   /* ABOUT SECTION */
+
+.about{
+    padding:100px 0;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-content h2{
+    color:var(--primary);
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.about-content p{
+    color:var(--gray);
+}
+
+.about-content img{
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+   /* MISSION SECTION */
+
+.mission{
+    padding:100px 0;
+    background:var(--light);
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.card p{
+    color:var(--gray);
+}
+
+   /* TEAM SECTION */
+
+.team{
+    padding:100px 0;
+}
+
+.team h2{
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.team-card{
+    background:white;
+    border-radius:var(--radius);
+    overflow:hidden;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+.team-card img{
+    height:320px;
+    object-fit:cover;
+}
+
+.team-card h3{
+    margin-top:20px;
+    color:var(--primary);
+}
+
+.team-card p{
+    color:var(--secondary);
+    padding-bottom:20px;
+    font-weight:600;
+}
+
+   /* ACHIEVEMENTS SECTION */
+
+.achievements{
+    background:var(--primary);
+    color:white;
+    padding:100px 0;
+}
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    text-align:center;
+}
+
+.achievement-card h2{
+    color:var(--secondary);
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+
+   /* CALL TO ACTION */
+
+.cta{
+    background: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url("../images/cta-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta p{
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e5e5e5;
+}
+
+.cta-btn{
+     display:inline-block;
+    background:var(--secondary);
+    color:var(--white);
+    padding:16px 40px;
+    border-radius:50px;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.cta-btn:hover{
+    background:#b8941f;
+    transform:translateY(-5px);
+}
+
+
+   /* AGENT CONTACT SECTION */
+
+.agent-contact{
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.contact-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid aside{
+    background:var(--white);
+    padding:50px;
+    max-width:800px;
+    text-align:center;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border-top:5px solid var(--secondary);
+}
+
+.contact-grid h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.contact-grid p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--secondary);
+    color:var(--white);
+    padding:14px 30px;
+    border-radius:var(--radius);
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.btn:hover{
+    background:#b8941f;
+    transform:translateY(-3px);
+}
+
+.footer{
+    background: var(--primary);
+    color: #fff;
+    padding-top: 60px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer h3,
+.footer h4{
+    margin-bottom: 15px;
+}
+
+.footer p{
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links li{
+    margin-bottom: 10px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #fff;
+}
+
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid #333;
+    padding: 20px;
+    color: #aaa;
+}
+
+
+   /* RESPONSIVE DESIGN */
+
+@media(max-width:992px){
+
+    .about-content{
+        grid-template-columns:1fr;
+    }
+
+    .mission-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .achievement-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .page-header{
+        padding:90px 20px;
+    }
+
+    .page-header h1{
+        font-size:2.2rem;
+    }
+
+    .about,
+    .mission,
+    .team,
+    .achievements,
+    .agent-contact{
+        padding:70px 0;
+    }
+
+    .mission-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .achievement-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta h2{
+        font-size:2rem;
+    }
+
+    .cta p{
+        font-size:1rem;
+    }
+
+    .contact-grid aside{
+        padding:30px 20px;
+    }
+
+    .contact-grid h3{
+        font-size:1.6rem;
+    }
+
+    .page-banner{
+        height:300px;
+    }
+
+    .page-banner-content h1{
+        font-size:2rem;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .page-header h1{
+        font-size:1.8rem;
+    }
+
+    .about-content h2{
+        font-size:1.6rem;
+    }
+
+    .team h2{
+        font-size:2rem;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .cta h2{
+        font-size:1.7rem;
+    }
+
+    .contact-grid aside{
+        padding:25px 15px;
+    }
+
+}

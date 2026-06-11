@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Zara Prime Realty | Property Listings</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Agent Profile -->
+    <link rel="stylesheet" href="./css/agent-profile.css">
+
+    <link rel="stylesheet" href="./css/listings.css">
+
+    <link rel="stylesheet" href="./contact.html">
+
+</head>
+
+<body>
+<!-- HEADER -->
+
+<header>
+
+    <div class="container nav-container">
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <img src="./images/logo.png" alt="Zara Prime Realty Logo">
+
+            <div class="logo-text">
+
+                <h2>ZARA</h2>
+
+                <span>PRIME REALTY</span>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav>
+
+    <ul>
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">Properties ▾</a>
+
+            <ul class="dropdown-menu">
+
+                <li>
+                    <a href="listings.html">Property Listings</a>
+                </li>
+
+                <li>
+                    <a href="property-detail.html">Property Details</a>
+                </li>
+
+                <li>
+                    <a href="search-results.html">Search Results</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">Agents ▾</a>
+
+            <ul class="dropdown-menu">
+
+                <li>
+                    <a href="agents.html">Our Agents</a>
+                </li>
+
+                <li>
+                    <a href="agent-profile.html">Agent Profile</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+            <a href="about.html">About Us</a>
+        </li>
+
+        <li>
+            <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">Account ▾</a>
+
+            <ul class="dropdown-menu">
+
+                <li>
+                    <a href="auth.html">Login / Register</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+
+        <!-- CTA Button -->
+
+        <a href="auth.html" class="btn">
+            Get Started
+        </a>
+
+    </div>
+
+</header>
+
+          
+     <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <h1>
+                        Find Your Perfect Luxury Home
+                    </h1>
+
+                    <p>
+                        Discover premium properties in the most desirable locations.
+                    </p>
+
+                    <!-- Search Form -->
+
+                    <form class="search-form">
+
+                        <input type="text"
+                            placeholder="Enter Location">
+
+                        <select>
+
+                            <option>Property Type</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Duplex</option>
+                            <option>Penthouse</option>
+
+                        </select>
+
+                        <select>
+
+                            <option>Price Range</option>
+                            <option>$50,000 - $100,000</option>
+                            <option>$100,000 - $250,000</option>
+                            <option>$250,000 - $500,000</option>
+
+                        </select>
+
+                        <button type="submit">
+                            Search
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+         <!-- FEATURED PROPERTIES -->
+
+    <section class="featured">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured Properties
+            </h2>
+
+            <div class="property-grid">
+
+                <!-- Property 1 -->
+
+                <div class="property-card">
+
+                    <img src="./images/luxury-property5.jpeg" alt="Property">
+
+                    <div class="property-info">
+
+                        <h3>$450,000</h3>
+
+                        <p>Lekki, Lagos</p>
+
+                        <div class="property-meta">
+
+                            <span><i class="fa-solid fa-bed"></i> 3 flats</span>
+
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+
+                        </div>
+
+                        <a href="./property-detail.html" class="card-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Property 2 -->
+
+                <div class="property-card">
+
+                    <img src="./images/light-house.jpg" alt="Property">
+
+                    <div class="property-info">
+
+                        <h3>$180,000</h3>
+
+                        <p>Victoria Island</p>
+
+                        <div class="property-meta">
+
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+
+                            <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
+
+                        </div>
+
+                        <a href="#" class="card-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Property 3 -->
+
+                <div class="property-card">
+
+                    <img src="./images/houseproperty.jpeg" alt="Property">
+
+                    <div class="property-info">
+
+                        <h3>$190,000</h3>
+
+                        <p>Abuja</p>
+
+                        <div class="property-meta">
+
+                            <span><i class="fa-solid fa-bed"></i> 2 flats</span>
+
+                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+
+                        </div>
+
+                        <a href="#" class="card-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Property 4 -->
+
+                <div class="property-card">
+
+                    <img src="./images/luxury-property2.jpeg" alt="Property">
+
+                    <div class="property-info">
+
+                        <h3>$100,000</h3>
+
+                        <p>Ikoyi</p>
+
+                        <div class="property-meta">
+
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+
+                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+
+                        </div>
+
+                        <a href="#" class="card-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Property 5 -->
+
+                <div class="property-card">
+
+                    <img src="./images/property-big.jpeg" alt="Property">
+
+                    <div class="property-info">
+
+                        <h3>$350,000</h3>
+
+                        <p>Port Harcourt</p>
+
+                        <div class="property-meta">
+
+                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+
+                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+
+                        </div>
+
+                        <a href="#" class="card-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Property 6 -->
+
+                <div class="property-card">
+
+                    <img src="./images/property6.jpg" alt="Property">
+
+                    <div class="property-info">
+
+                        <h3>$500,000</h3>
+
+                        <p>Banana Island</p>
+
+                        <div class="property-meta">
+
+                            <span><i class="fa-solid fa-bed"></i> 7 Beds</span>
+
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+
+                        </div>
+
+                        <a href="#" class="card-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+ <!-- WHY CHOOSE US -->
+
+    <section class="why-us">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Why Choose Us
+            </h2>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-shield"></i>
+
+                    <h3>Trusted Agents</h3>
+
+                    <p>
+                        Experienced professionals helping you make the right decision.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <h3>Premium Listings</h3>
+
+                    <p>
+                        Carefully selected luxury properties across top locations.
+                    </p>
+
+                </div>
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h3>24/7 Support</h3>
+
+                    <p>
+                        Our team is available whenever you need assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+         <!-- TOP AGENTS -->
+
+    <section class="agents">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Meet Our Agents
+            </h2>
+
+            <div class="agent-grid">
+
+                <div class="agent-card">
+
+                    <img src="./images/agent2.jpeg" alt="Agent">
+
+                    <h3>John Smith</h3>
+
+                    <p>Senior Agent</p>
+
+                </div>
+
+                <div class="agent-card">
+
+                    <img src="./images/agent3.jpeg" alt="Agent">
+
+                    <h3>Sarah Johnson</h3>
+
+                    <p>Luxury Specialist</p>
+
+                </div>
+
+                <div class="agent-card">
+
+                    <img src="./images/ourteam.jpg" alt="Agent">
+
+                    <h3>Olivia Zack</h3>
+
+                    <p>Property Consultant</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+ <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div>
+
+                <h3>Zara Prime Realty</h3>
+
+                <p>
+                    Helping clients find luxury homes worldwide.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Listings</a></li>
+                    <li><a href="#">Agents</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>Email: info@zaraprime.com</p>
+
+                <p>Phone: +234 800 000 0000</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Zara Prime Realty. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

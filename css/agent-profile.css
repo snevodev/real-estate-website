@@ -1,0 +1,465 @@
+
+   /* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+   /* ROOT VARIABLES */
+
+:root{
+    --primary:#0F172A;
+    --secondary:#D4AF37;
+    --white:#FFFFFF;
+    --light:#F8FAFC;
+    --gray:#64748B;
+    --dark:#020617;
+
+    --radius:12px;
+    --shadow:0 10px 30px rgba(0,0,0,.12);
+    --transition:.3s ease;
+}
+
+   /* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+   /* HEADER */
+
+header{
+    background:var(--primary);
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+}
+
+.logo h2{
+    color:var(--secondary);
+    font-size:1.5rem;
+}
+
+.logo span{
+    color:white;
+    font-size:.85rem;
+    letter-spacing:1px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    font-weight:500;
+    transition:var(--transition);
+}
+
+nav ul li a:hover{
+    color:var(--secondary);
+}
+
+   /* HERO BANNER */
+
+.agent-banner{
+    height:500px;
+
+    background:
+    linear-gradient(
+        rgba(15,23,42,.65),
+        rgba(15,23,42,.65)
+    ),
+    url("../images/hero-agent.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+.page-banner-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+.page-banner-content p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+   /* AGENT PROFILE */
+
+.agent-profile{
+    padding:100px 0;
+}
+
+.profile-card{
+    background:white;
+    display:flex;
+    gap:40px;
+    padding:40px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+}
+
+.profile-card img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:var(--radius);
+}
+
+.profile-content{
+    flex:1;
+}
+
+.profile-content h1{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.profile-content h3{
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+.contact-info{
+    margin-bottom:15px;
+    color:var(--gray);
+}
+
+.contact-info i{
+    color:var(--secondary);
+    margin-right:10px;
+}
+
+   /* SOCIAL LINKS */
+
+.social-links{
+    margin-top:25px;
+}
+
+.social-links a{
+    width:45px;
+    height:45px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--primary);
+    color:white;
+
+    border-radius:50%;
+    margin-right:10px;
+
+    transition:var(--transition);
+}
+
+.social-links a:hover{
+    background:var(--secondary);
+    color:var(--primary);
+}
+
+   /* BIO */
+
+.bio{
+    padding:0 0 100px;
+}
+
+.bio h2{
+    color:var(--primary);
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.bio p{
+    color:var(--gray);
+    max-width:900px;
+}
+
+   /* STATS */
+
+.stats{
+    padding-bottom:100px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.stat-card{
+    background:white;
+    text-align:center;
+    padding:40px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card h2{
+    color:var(--secondary);
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:var(--gray);
+}
+
+   /* CURRENT LISTINGS */
+
+.current-listings{
+    padding-bottom:100px;
+}
+
+.current-listings h2{
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.listing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.listing-card{
+    background:white;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.listing-card:hover{
+    transform:translateY(-10px);
+}
+
+.listing-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.listing-info{
+    padding:25px;
+}
+
+.listing-info h3{
+    color:var(--secondary);
+    margin-bottom:10px;
+}
+
+.listing-info p{
+    color:var(--gray);
+    margin-bottom:20px;
+}
+
+.listing-info a{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    transition:var(--transition);
+}
+
+.listing-info a:hover{
+    background:var(--secondary);
+    color:var(--primary);
+}
+
+   /* FOOTER */
+
+.footer{
+    background:var(--primary);
+    color:#fff;
+    padding-top:60px;
+    border-top:3px solid var(--secondary);
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    padding-bottom:40px;
+}
+
+.footer h3,
+.footer h4{
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#ccc;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:var(--secondary);
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.1);
+    padding:20px;
+    color:#aaa;
+}
+
+
+   /* TABLET */
+
+@media(max-width:992px){
+
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-card img{
+        margin:auto;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+   /* MOBILE */
+
+@media(max-width:768px){
+
+    .nav-container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .agent-banner{
+        height:350px;
+    }
+
+    .page-banner-content h1{
+        font-size:2.5rem;
+    }
+
+    .profile-card{
+        padding:25px;
+    }
+
+    .profile-card img{
+        width:100%;
+        height:auto;
+    }
+
+    .current-listings h2{
+        font-size:2rem;
+    }
+
+}
+
+   /* SMALL MOBILE */
+
+@media(max-width:480px){
+
+    .page-banner-content h1{
+        font-size:2rem;
+    }
+
+    .page-banner-content p{
+        font-size:1rem;
+    }
+
+    .listing-grid{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zara Prime Realty | Property Listings</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./css/listings.css">
+
+</head>
+
+<body>
+
+ <!-- HEADER -->
+
+    <header>
+
+        <div class="container nav-container">
+
+            <div class="logo">
+
+                <img src="./images/logo.png" alt="ZARA PRIME REALTY Logo">
+
+                <div>
+                    <h2>ZARA</h2>
+                    <span>PRIME REALTY</span>
+                </div>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li><a href="./listings.html" class="active">Listings</a></li>
+
+                    <li><a href="./agent-profile.html">Agents</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- PAGE HERO -->
+
+    <section class="page-banner listings-banner">
+
+    <div class="page-banner-content">
+
+        <h1>Property Listings</h1>
+
+        <p>
+            Explore premium properties worldwide.
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- LISTINGS SECTION -->
+
+    <section class="listings-page">
+
+        <div class="container listings-layout">
+
+    <!-- FILTER SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <h2>Filters</h2>
+
+                <!-- Price Range -->
+
+                <div class="filter-group">
+
+                    <label>Price Range</label>
+
+                    <input type="range"
+                        min="50000"
+                        max="1000000">
+
+                </div>
+
+                <!-- Property Type -->
+
+                <div class="filter-group">
+
+                    <label>Property Type</label>
+
+                    <div>
+                        <input type="checkbox"> Apartment
+                    </div>
+
+                    <div>
+                        <input type="checkbox"> Villa
+                    </div>
+
+                    <div>
+                        <input type="checkbox"> Duplex
+                    </div>
+
+                    <div>
+                        <input type="checkbox"> Penthouse
+                    </div>
+
+                </div>
+
+                <!-- Bedrooms -->
+
+                <div class="filter-group">
+
+                    <label>Bedrooms</label>
+
+                    <select>
+
+                        <option>Any</option>
+
+                        <option>1 Bedroom</option>
+
+                        <option>2 Bedrooms</option>
+
+                        <option>3 Bedrooms</option>
+
+                        <option>4+ Bedrooms</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Location -->
+
+                <div class="filter-group">
+
+                    <label>Location</label>
+
+                    <input type="text"
+                        placeholder="Enter location">
+
+                </div>
+
+                <button class="filter-btn">
+
+                    Apply Filters
+
+                </button>
+
+            </aside>
+
+    <!-- MAIN CONTENT -->
+
+            <main class="main-content">
+
+                <!-- Sort Bar -->
+
+                <div class="sort-bar">
+
+                    <h3>Showing 9 Properties</h3>
+
+                    <select>
+
+                        <option>Sort By</option>
+
+                        <option>Newest</option>
+
+                        <option>Price Low - High</option>
+
+                        <option>Price High - Low</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Property Grid -->
+
+                <div class="property-grid">
+
+                    <!-- Property Card 1 -->
+
+                    <div class="property-card">
+
+                        <img src="./images/white-house.jpg" alt="Property">
+
+                        <div class="property-info">
+
+                            <h3>$95,000</h3>
+
+                            <p>Lekki Phase 1, Lagos</p>
+
+                            <div class="property-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-bed"></i> 4
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-bath"></i> 3
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-ruler-combined"></i> 2500 sqft
+                                </span>
+
+                            </div>
+
+                            <a href="property-detail.html" class="card-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Property Card 2 -->
+
+                    <div class="property-card">
+
+                        <img src="./images/Luxury Waterfront Villa.jpeg" alt="Property">
+
+                        <div class="property-info">
+
+                            <h3>$180,000</h3>
+
+                            <p>Ikoyi, Lagos</p>
+
+                            <div class="property-meta">
+
+                                <span><i class="fa-solid fa-bed"></i> 5</span>
+
+                                <span><i class="fa-solid fa-bath"></i> 4</span>
+
+                                <span><i class="fa-solid fa-ruler-combined"></i> 3200 sqft</span>
+
+                            </div>
+
+                            <a href="property-detail.html" class="card-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Property Card 3 -->
+
+                    <div class="property-card">
+
+                        <img src="./images/property-est1.jpg" alt="Property">
+
+                        <div class="property-info">
+
+                            <h3>$350,000</h3>
+
+                            <p>Abuja, Nigeria</p>
+
+                            <div class="property-meta">
+
+                                <span><i class="fa-solid fa-bed"></i> 3</span>
+
+                                <span><i class="fa-solid fa-bath"></i> 2</span>
+
+                                <span><i class="fa-solid fa-ruler-combined"></i> 1800 sqft</span>
+
+                            </div>
+
+                            <a href="property-detail.html" class="card-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Repeat to make 9 cards -->
+
+                    <div class="property-card">
+                        <img src="./images/luxury-property.jpeg" alt="">
+                        <div class="property-info">
+                            <h3>$700,000</h3>
+                            <p>Victoria Island</p>
+                            <div class="property-meta">
+                                <span><i class="fa-solid fa-bed"></i> 6</span>
+                                <span><i class="fa-solid fa-bath"></i> 5</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 4200 sqft</span>
+                            </div>
+                            <a href="#" class="card-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <img src="./images/light-house.jpg" alt="">
+                        <div class="property-info">
+                            <h3>$280,000</h3>
+                            <p>Enugu</p>
+                            <div class="property-meta">
+                                <span><i class="fa-solid fa-bed"></i> 3</span>
+                                <span><i class="fa-solid fa-bath"></i> 2</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 1600 sqft</span>
+                            </div>
+                            <a href="#" class="card-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <img src="./images/long-house.jpg" alt="">
+                        <div class="property-info">
+                            <h3>$500,000</h3>
+                            <p>Port Harcourt</p>
+                            <div class="property-meta">
+                                <span><i class="fa-solid fa-bed"></i> 4</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 2400 sqft</span>
+                            </div>
+                            <a href="#" class="card-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <img src="images/luxury-property3.jpeg" alt="">
+                        <div class="property-info">
+                            <h3>$390,000</h3>
+                            <p>Asaba</p>
+                            <div class="property-meta">
+                                <span><i class="fa-solid fa-bed"></i> 4</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 2100 sqft</span>
+                            </div>
+                            <a href="#" class="card-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <img src="images/luxury-property5.jpeg" alt="">
+                        <div class="property-info">
+                            <h3>$300,000</h3>
+                            <p>Banana Island</p>
+                            <div class="property-meta">
+                                <span><i class="fa-solid fa-bed"></i> 7</span>
+                                <span><i class="fa-solid fa-bath"></i> 6</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 5500 sqft</span>
+                            </div>
+                            <a href="#" class="card-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <img src="./images/property-big.jpg" alt="">
+                        <div class="property-info">
+                            <h3>$430,000</h3>
+                            <p>Owerri</p>
+                            <div class="property-meta">
+                                <span><i class="fa-solid fa-bed"></i> 4</span>
+                                <span><i class="fa-solid fa-bath"></i> 3</span>
+                                <span><i class="fa-solid fa-ruler-combined"></i> 2600 sqft</span>
+                            </div>
+                            <a href="#" class="card-btn">View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+
+            <h3>Zara Prime Realty</h3>
+
+            <p>
+                Connecting families, homebuyers, and investors with premium real estate opportunities and exceptional service.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Contact</h4>
+
+            <p>Email: info@zaraprimerealty.com</p>
+            <p>Phone: +234 800 000 0000</p>
+            <p>Location: Lagos, Nigeria</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Zara Prime Realty. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+</body>
+
+</html>
