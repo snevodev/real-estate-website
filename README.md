@@ -1,6 +1,6 @@
 # Zara Prime Realty
 
-A modern and responsive real estate website built with HTML, CSS, and JavaScript.
+A modern and responsive real estate website built with HTML and CSS.
 
 ## Live Demo
 https://zara-prime-realty.netlify.app
