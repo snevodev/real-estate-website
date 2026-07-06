@@ -154,9 +154,6 @@ nav ul li a{
     transition:var(--transition);
 }
 
-/* =========================
-   DROPDOWN MENU CSS
-========================= */
 
 /* DROPDOWN MENU */
 
@@ -176,8 +173,7 @@ nav ul li{
     opacity:0;
     visibility:hidden;
     transform:translateY(10px);
-
-    transition:.3s ease;
+    transition:.2s ease;
     z-index:1000;
 }
 
@@ -427,8 +423,14 @@ footer{
 @media(max-width:992px){
 
     .nav-container{
-        flex-direction:column;
-        gap:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    nav ul{
+        gap:15px;
     }
 
     .hero-content h1{
@@ -468,6 +470,55 @@ footer{
 
     .section-title{
         font-size:1.8rem;
+    }
+
+}
+
+/* HAMBURGER */
+
+.menu-toggle{
+    display:none;
+    font-size:2rem;
+    color:white;
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        width:100%;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:0;
+        margin-top:20px;
+    }
+
+    nav ul li{
+        width:100%;
+        text-align:center;
+        padding:15px 0;
+        border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    .btn{
+        display:none;
+    }
+
+    .nav-container{
+        flex-wrap:wrap;
     }
 
 }
